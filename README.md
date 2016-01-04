@@ -1,5 +1,7 @@
-Copyright (c) 2016, Maxim Imakaev 
+Copyright (c) 2016, Maxim Imakaev
+ 
 Code written by Maxim Imakaev <mimakaev@gmail.com>
+
 Licenced under 3-clause BSD (see LICENCE file) 
 
 This is a set of utilities used to calculate promoter sequences starting from a set of upstreams. 
@@ -7,13 +9,17 @@ This is a set of utilities used to calculate promoter sequences starting from a 
 Requirements
 ============
 
-Python 2.7 (2.6 may work) 
-numpy
-scipy
-matplotlib
-pandas 
-joblib 
-weblogolib (https://pypi.python.org/pypi/weblogo/3.0)
+* Python 2.7 (2.6 may work) 
+* numpy
+* scipy
+* matplotlib
+* pandas 
+* joblib 
+* weblogolib (https://pypi.python.org/pypi/weblogo) 
+
+If python and/or the above packages are not available on your machine, anaconda https://www.continuum.io/downloads will have everything included, except for weblogolib, which can be installed with "pip install weblogo". You do not need root access to use anaconda.
+
+The software was tested on Ubuntu, and will probably work under MAC. It was not tested for Windows, but may work.  
 
 
 Important general notes
