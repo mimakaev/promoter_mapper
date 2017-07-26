@@ -148,7 +148,7 @@ for j, sortBy in enumerate(toScore):
     bestNums = [100, 500, 3000, 10000, 30000]
 
 
-    myDataFrame = alldatas.sort(columns=sortBy)
+    myDataFrame = alldatas.sort_values(sortBy)
 
     smallFrame = myDataFrame.ix[myDataFrame.index[-10000:]][::-1]
     smallFrame.to_csv("Best10000_sortBy_{0}.csv".format(sortBy))

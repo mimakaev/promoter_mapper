@@ -653,7 +653,7 @@ class PatternFinder(object):
             myDataFrame.to_pickle(os.path.join(saveDir, "{0}_{1}".format(i, j)))
             if not os.path.exists(os.path.join(self.folder, "CSVs")):
                 os.mkdir(os.path.join(self.folder, "CSVs"))
-            myDataFrame = myDataFrame.sort("Score corr", ascending=False)
+            myDataFrame = myDataFrame.sort_values("Score corr", ascending=False)
             myDataFrame.to_csv(os.path.join(self.folder, "CSVs", "{0}_{1}.csv".format(i, j)))
 
             myDataFrame = myDataFrame[::len(myDataFrame) / 10]

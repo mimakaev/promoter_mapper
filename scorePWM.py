@@ -370,7 +370,7 @@ class PWM(object):
             scores = self.probabilities()
             myframe["ConsensusLeft"] = translateRaw(np.argmax(scores["ProbsATGCLeft"], axis=1))
             myframe["ConsensusRight"] = translateRaw(np.argmax(scores["ProbsATGCRight"], axis=1))
-            myframe = myframe.sort(["scores"], ascending=False)
+            myframe = myframe.sort_values(["scores"], ascending=False)
             return myframe
 
         scoreMy -= scoreMy.min()

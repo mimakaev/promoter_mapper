@@ -263,7 +263,7 @@ for impCutoff in [0.3, 0.45, 0.6]:
     df["{0}_rightBoxMax".format(impCutoff)] = rig2
 
 df.insert(2, "In current set", inCurrent)
-df = df.sort(["score"], ascending=False)
+df = df.sort_values(["score"], ascending=False)
 df.to_csv(os.path.join(scoreFolder, "promoterTable.csv"))
 
 print counter
