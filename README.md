@@ -33,8 +33,8 @@ A list of upstreams should be supplied as a **text file** (not fasta), with diff
 
 Different parts of the program operate on one folder, and create sub-folders and files inside it. Different parts are to be run in the defined order. They will throw an error if the previous part was not run, and will silently override files if run again with different parameters. This folder is called scoreFolder throughout this text. 
 
-1. Pattern scores 
-=================
+1 Pattern scores 
+================
 
 input
 -----
@@ -60,8 +60,8 @@ This part of the library is done by sampleLaunch.py program, which is being call
 Note that the code of the sampleLaunch.py has several other parameters which you may want to change. 
 
 
-2. Aggregating all scores
-=========================
+2 Aggregating all scores
+========================
 
 input
 -----
@@ -77,8 +77,8 @@ Note that we use 02_sortBy_ScoreNew_8 part way of ranking all patterns, which sl
 
 ..note:: From step 2 you can go either to steps 3-4 or to step 5 directly. Those methods are independent. 
 
-3. Run the PCA 
-==============
+3 Run the PCA 
+=============
 
 input
 -----
@@ -115,8 +115,8 @@ Tables with scoring and promoter sequences for each PC in sourceFolder/savedTabl
 Note that you would usually subtract 1 from the positions of the "cloud" used previously, as the 8-mer used for the PWM extends by 1bp left and right beyound the start of the 6-mer. 
 
 
-5. Detect promoter sequences
-============================
+5 Detect promoter sequences
+===========================
 
 input
 -----
