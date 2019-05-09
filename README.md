@@ -1,6 +1,6 @@
-Copyright (c) 2016, Maxim Imakaev
+Copyright (c) 2016, Maxim Imakaev, Jelena Chuklina
  
-Code written by Maxim Imakaev <mimakaev@gmail.com>
+Code written by Maxim Imakaev <mimakaev@gmail.com>, Jelena Chuklina <chuklina.jelena@gmail.com>
 
 Licenced under 3-clause BSD (see LICENCE file) 
 
